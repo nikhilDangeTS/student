@@ -19,7 +19,7 @@ Route::get('/welcome', function () {
 
 Route::get('/','StudentController@viewroot')->middleware('UserAuth');
 
-Route::get('/test','StudentController@viewtest');
+//Route::get('/test','StudentController@viewtest');
 
 Route::get('/registrations','StudentController@viewRegistration');
 Route::post('/registrations','StudentController@registerUsers')->name('register_student');
