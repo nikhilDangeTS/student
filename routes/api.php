@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Http\Request;
-use App\Events\SomeEvent;
-use App\Http\Middleware\test;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('test',function(){
-    return response([1,2,3,4],200);   
-});
+
